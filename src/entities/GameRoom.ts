@@ -10,3 +10,7 @@ export default class GameRoom {
     Object.assign(this, props)
   }
 }
+
+export interface IGameRoom{ 
+  create(gameRoom: GameRoom): Promise<void>;
+}
